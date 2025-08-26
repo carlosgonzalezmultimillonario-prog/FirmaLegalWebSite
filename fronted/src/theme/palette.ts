@@ -5,8 +5,9 @@ export const palette = {
     default: "#EEE9DD", // Page background (warm beige/grey tone)
     paper:   "#F8F3E7", // Card background (lighter ivory for contrast)
   },
-  text: {
-    primary:   "#706E69", // Default body text (warm gray)
-    secondary: "#5C5C5C", // Secondary text (subtitles, descriptions)
-  },
+text: {
+  primary: "#2E2E2E",   // Strong dark gray for main body text (better readability)
+  secondary: "#6E6E6E", // Medium gray for subtitles/descriptions
+  accent: "#891C1B",    // Optional: use brand burgundy for headings/highlights
+},
 };
