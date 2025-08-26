@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material/styles";
-import { palette } from "./palette";
+import { palette } from "./palette..theme";
 
 export const theme = createTheme({
   palette: {
@@ -63,7 +63,7 @@ typography: {
     fontWeight: 500,
     fontSize: "1rem",
     lineHeight: 1.5,
-    color: "#6E6E6E", // tu text.secondary
+    color: "#6E6E6E", // text.secondary
   },
   subtitle2: {
     fontWeight: 500,
