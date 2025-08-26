@@ -4,6 +4,7 @@ import { Card, CardContent, CardActions, Button, Typography } from "@mui/materia
 
 export default function UiPreview() {
   return (
+    
     <Card
       sx={{
         maxWidth: 400,
