@@ -1,10 +1,10 @@
 "use client";
 
+import React, { FC } from "react";
 import { Card, CardContent, CardActions, Button, Typography } from "@mui/material";
 
-export default function UiPreview() {
+const UiPreview: FC = () => {
   return (
-    
     <Card
       sx={{
         maxWidth: 400,
@@ -38,4 +38,6 @@ export default function UiPreview() {
       </CardActions>
     </Card>
   );
-}
+};
+
+export default UiPreview;
