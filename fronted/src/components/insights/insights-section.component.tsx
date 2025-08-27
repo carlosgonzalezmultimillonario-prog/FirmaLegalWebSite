@@ -1,14 +1,17 @@
 "use client";
-
 import { FC } from "react";
-import { Grid, Typography, Box } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import InsightsCard from "./insights-card.component";
 import { Insight } from "@/types/insights.types";
 import { INSIGHTS_MOCK } from "@/mocks/insights.mocks";
 
-type Props = { items?: Insight[]; title?: string; subtitle?: string };
+type InsightsSectionProps = {
+  items?: Insight[];
+  title?: string;
+  subtitle?: string;
+};
 
-const InsightsSection: FC<Props> = ({
+const InsightsSection: FC<InsightsSectionProps> = ({
   items = INSIGHTS_MOCK,
   title = "Insights",
   subtitle = "Articles, Events & Recent Matters",
@@ -31,14 +34,21 @@ const InsightsSection: FC<Props> = ({
           {subtitle}
         </Typography>
       </Box>
-
-      <Grid container spacing={3}>
-        {items.map((it) => (
-          <Grid key={it.id} item xs={12} md={6} lg={6}>
-            <InsightsCard item={it} />
-          </Grid>
+      
+      <Box 
+        sx={{ 
+          display: 'grid',
+          gridTemplateColumns: { 
+            xs: '1fr', 
+            md: 'repeat(2, 1fr)' 
+          },
+          gap: 3 
+        }}
+      >
+        {items.map((insight) => (
+          <InsightsCard key={insight.id} item={insight} />
         ))}
-      </Grid>
+      </Box>
     </Box>
   );
 };
