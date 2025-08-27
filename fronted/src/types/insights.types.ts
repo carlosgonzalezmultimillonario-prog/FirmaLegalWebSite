@@ -1,7 +1,7 @@
-export type Insight = {
+export type InsightGrid = {
   id: string;
+  alt?:string
   title: string;
-  alt:string;
-  date: string;   // o Date si lo quieres tipado
+  date: string;   
   image: string;
 };

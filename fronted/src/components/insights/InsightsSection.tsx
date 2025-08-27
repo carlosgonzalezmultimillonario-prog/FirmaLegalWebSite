@@ -1,18 +1,18 @@
 "use client";
 import { FC } from "react";
 import { Typography, Box } from "@mui/material";
-import InsightsCard from "./insights-card.component";
-import { Insight } from "@/types/insights.types";
-import { INSIGHTS_MOCK } from "@/mocks/insights.mocks";
+import InsightsCard from "./InsightsCard";
+import { InsightGrid } from "@/types/insights.types";
+import { insightsMock } from "@/mocks/insights.mocks";
 
 type InsightsSectionProps = {
-  items?: Insight[];
+  items?: InsightGrid[];
   title?: string;
   subtitle?: string;
 };
 
 const InsightsSection: FC<InsightsSectionProps> = ({
-  items = INSIGHTS_MOCK,
+  items = insightsMock,
   title = "Insights",
   subtitle = "Articles, Events & Recent Matters",
 }) => {

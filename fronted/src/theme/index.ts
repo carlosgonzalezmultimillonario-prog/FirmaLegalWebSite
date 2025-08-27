@@ -1,82 +1,37 @@
-import { createTheme } from "@mui/material/styles";
-import { palette } from "./palette.theme";
+import { createTheme } from '@mui/material/styles';
+import { red, blue } from '@mui/material/colors';
 
 export const theme = createTheme({
+  cssVariables: {
+    colorSchemeSelector: 'class',
+  },
   palette: {
-    primary: { main: palette.primary.main },
-    secondary: { main: palette.secondary.main },
+    primary: {
+      main: blue[700], 
+    },
+    secondary: {
+      main: red[500], 
+    },
     background: {
-      default: palette.background.default,
-      paper: palette.background.paper,
-    },
-    text: {
-      primary: palette.text.primary,
-      secondary: palette.text.secondary,
+      default: '#f5f5f5',
+      paper: '#ffffff',
     },
   },
-typography: {
-  fontFamily: "Roboto, Helvetica, Arial, sans-serif",
-
-  h1: {
-    fontWeight: 700,
-    fontSize: "2.5rem", // ~40px
-    lineHeight: 1.2,
+  typography: {
+    fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+    h6: {
+      fontWeight: 600,
+    },
   },
-  h2: {
-    fontWeight: 700,
-    fontSize: "2rem", // ~32px
-    lineHeight: 1.3,
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'none',
+        },
+      },
+    },
   },
-  h3: {
-    fontWeight: 600,
-    fontSize: "1.75rem", // ~28px
-    lineHeight: 1.3,
-  },
-  h4: {
-    fontWeight: 600,
-    fontSize: "1.5rem", // ~24px
-    lineHeight: 1.4,
-  },
-  h5: {
-    fontWeight: 500,
-    fontSize: "1.25rem", // ~20px
-    lineHeight: 1.4,
-  },
-  h6: {
-    fontWeight: 500,
-    fontSize: "1rem", // ~16px
-    lineHeight: 1.5,
-  },
-
-  body1: {
-    fontWeight: 400,
-    fontSize: "1rem", // ~16px
-    lineHeight: 1.6,
-  },
-  body2: {
-    fontWeight: 400,
-    fontSize: "0.875rem", // ~14px
-    lineHeight: 1.6,
-  },
-
-  subtitle1: {
-    fontWeight: 500,
-    fontSize: "1rem",
-    lineHeight: 1.5,
-    color: "#6E6E6E", // text.secondary
-  },
-  subtitle2: {
-    fontWeight: 500,
-    fontSize: "0.875rem",
-    lineHeight: 1.5,
-    color: "#6E6E6E",
-  },
-
-  button: {
-    textTransform: "none",
-    fontWeight: 600,
-    fontSize: "0.95rem",
-  },
-},
-
 });
+
+export default theme;

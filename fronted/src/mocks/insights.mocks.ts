@@ -1,6 +1,6 @@
-import { Insight } from "@/types/insights.types";
+import { InsightGrid } from "@/types/insights.types";
 
-export const INSIGHTS_MOCK: Insight[] = [
+export const  insightsMock: InsightGrid[] = [
   {
     id: "litigation-case",
     title:

@@ -4,15 +4,24 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardActionArea, Typography, Box } from "@mui/material";
-import { Insight } from "@/types/insights.types";
+import { InsightGrid } from "@/types/insights.types";
 
-type Props = { item: Insight };
+type Props = { item: InsightGrid };
 
 const InsightsCard: FC<Props> = ({ item }) => {
   return (
-    <Card sx={{ borderRadius: 3, overflow: "hidden", boxShadow: 3 }}>
+    <Card sx={{
+      borderRadius: 3,
+      overflow: "hidden",
+      boxShadow: 3
+    }}>
+
       <CardActionArea component={Link} href={`/insights/${item.id}`}>
-        <Box sx={{ position: "relative", width: "100%", aspectRatio: "3 / 2" }}>
+        <Box sx={{
+          position: "relative",
+          width: "100%",
+          aspectRatio: "3 / 2"
+        }}>
           <Image
             src={item.image}
             alt={item.alt ?? item.title}
