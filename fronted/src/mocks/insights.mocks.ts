@@ -1,0 +1,16 @@
+import { Insight } from "@/types/insights.types";
+
+export const INSIGHTS_MOCK: Insight[] = [
+  {
+    id: "litigation-case",
+    title: "In a high-stakes business litigation case, our legal team secured a multi-million-dollar settlement.",
+    date: "2025-07-24",
+    image: "/images/insights/litigation.jpg",
+  },
+  {
+    id: "divorce-case",
+    title: "We helped a client navigate a divorce, achieving a fair division of assets.",
+    date: "2025-07-24",
+    image: "/images/insights/divorce.jpg",
+  },
+];
