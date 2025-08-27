@@ -1,22 +1,11 @@
 import { createTheme } from '@mui/material/styles';
-import { red, blue } from '@mui/material/colors';
+import { palette } from './palette.theme';
 
 export const theme = createTheme({
   cssVariables: {
     colorSchemeSelector: 'class',
   },
-  palette: {
-    primary: {
-      main: blue[700], 
-    },
-    secondary: {
-      main: red[500], 
-    },
-    background: {
-      default: '#f5f5f5',
-      paper: '#ffffff',
-    },
-  },
+  palette,
   typography: {
     fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
     h6: {

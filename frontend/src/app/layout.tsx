@@ -1,19 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
-import { Container } from '@mui/material';
+import { Box } from '@mui/material';
 import ClientLayout from "./ClientLayout";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const roboto = Roboto({
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -28,19 +24,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={roboto.className}>
         <ClientLayout>
           <Header />
-          <Container
+          <Box
             component="main"
-            maxWidth="lg"
             sx={{
-              py: 4,
-              minHeight: '80vh'
+              minHeight: '80vh',
+              overflow: 'hidden'
             }}
           >
             {children}
-          </Container>
+          </Box>
           <Footer />
         </ClientLayout>
       </body>
