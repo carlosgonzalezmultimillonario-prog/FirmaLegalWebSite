@@ -1,9 +1,11 @@
+import { StaticImageData } from 'next/image';
+
 export interface InsightGrid {
   id: string;
   alt: string;
   title: string;
   date: string;
-  image: string;
+  image: string | StaticImageData;
 }
 export interface InsightsSectionProps {
   items?: InsightGrid[];
