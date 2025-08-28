@@ -1,10 +1,9 @@
-import LandingPageView from "@/pages/InsightsView";
-
+import LandingPage from "@/pages/LandingPage";
 
 export default function Home() {
   return (
    <main>
-       <LandingPageView />
+       <LandingPage/>
     </main>
   );
 }

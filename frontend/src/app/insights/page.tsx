@@ -1,12 +1,12 @@
-import InsightsSection from '@/components/insights/InsightsSection';
-import ArticlesSection from '@/components/insights/ArticlesSection';
-import { insightsMock } from '@/mocks/insights.mocks';
+import InsightsPage from '@/pages/InsightsPage';
+import { Box } from '@mui/system';
 
-export default function InsightsPage() {
+export default function Insights() {
   return (
-    <main>
-      <InsightsSection />
-      <ArticlesSection items={insightsMock} />
-    </main>
+    <Box>
+       <InsightsPage/>
+    </Box>
+     
+  
   );
 }

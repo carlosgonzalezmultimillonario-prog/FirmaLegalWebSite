@@ -2,13 +2,10 @@
 
 import { FC } from "react";
 import { Typography, Box, Button } from "@mui/material";
-import { InsightGrid } from "@/types/insights.types";
+import { ArticlesSectionProps } from "@/types/articles.types";
 
-type Props = {
-  items: InsightGrid[];
-};
 
-const ArticlesSection: FC<Props> = ({ items }) => {
+const ArticlesSection: FC<ArticlesSectionProps> = ({ items }) => {
   return (
     <Box sx={{ 
       pt: 20,

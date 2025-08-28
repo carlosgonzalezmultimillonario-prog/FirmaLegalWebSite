@@ -4,11 +4,9 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardActionArea, Typography, Box } from "@mui/material";
-import { InsightGrid } from "@/types/insights.types";
+import { InsightsCardProps } from "@/types/insights.types";
 
-type Props = { item: InsightGrid };
-
-const InsightsCard: FC<Props> = ({ item }) => {
+const InsightsCard: FC<InsightsCardProps> = ({ item }) => {
   return (
     <Card sx={{
       borderRadius: 0,

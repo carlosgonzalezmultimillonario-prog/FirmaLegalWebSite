@@ -1,5 +1,5 @@
 export const palette = {
-  primary:   { main: "#7A2222" },  // Main brand color (deep burgundy red)
+  primary:   { main: "#7E1A19" },  // Main brand color (deep burgundy red)
   secondary: { main: "#C48F88" },  // Accent color (soft red for titles/highlights)
   background: {
     default: "#EEE9DD", // Page background (warm beige/grey tone)

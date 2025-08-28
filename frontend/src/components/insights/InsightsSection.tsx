@@ -4,7 +4,7 @@ import { Typography, Box } from "@mui/material";
 import InsightsCard from "./InsightsCard";
 import { InsightsSectionProps } from "@/types/insights.types";
 import { insightsMock } from "@/mocks/insights.mocks";
-import Grid from "@mui/material/Grid";
+
 
 const InsightsSection: FC<InsightsSectionProps> = ({
   items = insightsMock,
@@ -52,7 +52,7 @@ const InsightsSection: FC<InsightsSectionProps> = ({
             {subtitle}
           </Typography>
         </Box>
-        
+    
         <Box 
           sx={{ 
             display: 'grid',

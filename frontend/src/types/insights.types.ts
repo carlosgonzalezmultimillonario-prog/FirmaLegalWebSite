@@ -10,3 +10,7 @@ export interface InsightsSectionProps {
   title?: string;
   subtitle?: string;
 }
+
+export interface InsightsCardProps {
+  item: InsightGrid;
+}

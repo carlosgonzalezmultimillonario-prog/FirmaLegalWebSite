@@ -181,7 +181,6 @@ const Header: React.FC = () => {
 
         {/* White line separator */}
         <Box sx={{ py: 1, display: { xs: 'none', md: 'block' } }}>
-          <Divider sx={{ bgcolor: 'rgba(255, 255, 255, 0.3)', height: '2px' }} />
         </Box>
 
         {/* Expandable content - Only visible when mobileOpen is true */}
