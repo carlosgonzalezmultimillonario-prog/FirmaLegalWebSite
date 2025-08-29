@@ -8,7 +8,7 @@ import { ArticlesSectionProps } from "@/types/articles.types";
 const ArticlesSection: FC<ArticlesSectionProps> = ({ items }) => {
   return (
     <Box sx={{ 
-      pt: 20,
+      pt: 30,
       pb: 12,
       backgroundColor: 'background.paper',
       position: 'relative',

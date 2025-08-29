@@ -44,15 +44,15 @@ const InsightsCard: FC<InsightsCardProps> = ({ item }) => {
           flexGrow: 1,
           width: '100%',
           p: 6,
-          pb: 10,
+       
           position: 'relative',
           zIndex: 1
         }}>
           <Typography 
             sx={{ 
-              fontSize: '0.875rem',
+              fontSize: '1rem',
               color: 'primary.main',
-              mb: 2,
+              
               fontWeight: 500
             }}
           >
@@ -60,10 +60,11 @@ const InsightsCard: FC<InsightsCardProps> = ({ item }) => {
           </Typography>
           <Typography 
             sx={{ 
-              fontSize: '1.5rem',
-              lineHeight: 1.3,
-              color: '#2C1810',
-              fontWeight: 400
+              fontSize: '3.4rem',
+              lineHeight: 1.2,
+              color: 'black',
+              fontWeight: 400,
+              textAlign:'left',
             }}
           >
             {item.title}
